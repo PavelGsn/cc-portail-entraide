@@ -41,7 +41,7 @@ Après : accueil 16 h, tutorat 16 h 30 et contact cliquable présents.
 
 ## Publication
 - Branches poussées : main, feature/accueil, feature/contact, feature/tutorat, hotfix/duree.
-- Dernier main vérifié identique en local et sur GitHub avant ce commit : `1b7f1d6`. L'identifiant du commit de ce fichier est dans mon message de remise.
+- Dernier main vérifié identique en local et sur GitHub avant ce commit : `9b5a435`. L'identifiant du commit de ce fichier est dans mon message de remise.
 
 ## Difficultés
 - Conflit attendu : voir plus haut.
@@ -51,4 +51,5 @@ Après : accueil 16 h, tutorat 16 h 30 et contact cliquable présents.
 ## Aides utilisées
 - Outil : Claude Code (Claude Opus 5.5).
 - Aide reçue : l'assistant a expliqué les commandes et rédigé ce fichier puis sa version courte.
+- L'assistant m'a aussi aidé à commiter et pousser ce fichier : version courte (`9b5a435`), puis le commit qui ajoute cette précision. Vérifié ensuite avec `git ls-remote origin`.
 
