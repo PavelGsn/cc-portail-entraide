@@ -94,12 +94,4 @@ Aucune autre difficulté.
 
 ## 9. Aides utilisées
 
-- **Outil :** Claude Code (assistant IA d'Anthropic, modèle Claude Opus 5.5), utilisé pour ce TP.
-- **Demande :** lire la consigne, extraire le zip et faire le TP, puis tout refaire pas à pas pour que je puisse suivre chaque commande.
-- **Aide reçue :** l'assistant a exécuté et expliqué les commandes : diagnostic, branches, commits `3f1df58` et `5a271f2`, fusions `b174e81` et `0328b21`, résolution du conflit, revert `6a2d678`, publication, tests et rédaction de ce fichier.
-- **Décision :** aide retenue pour apprendre la démarche ; je refais l'exercice seul avant le CC.
-- **Vérifications personnelles (les trois contrôles de la consigne) :**
-  1. Retrouver les deux parents de la fusion du conflit : `git log --graph --oneline --all` et `git log -1 --format=%p 0328b21` → `b174e81` et `a43f314`.
-  2. Expliquer le changement annulé et l'apport conservé : `git show b88cc98` (20 → 200) et `git show 6a2d678` (200 → 20) ; le conseil du README (`76184a8`) est toujours là.
-  3. Ouvrir `index.html`, faire 2 clics → « 2 créneau(x) · 40 minute(s) », puis Recommencer → « 0 créneau(x) · 0 minute(s) » ; comparer `git rev-parse main` avec le dernier commit affiché sur la page GitHub de `main`.
-- **Ressources :** documentation Git (`git merge`, `git revert`, `git log --graph`), cours S2.
+- **Outil :** Claude Code (modèle Claude Opus 5.5), utilisé pour le compte rendu de ce TP et pour la validation des commandes.
