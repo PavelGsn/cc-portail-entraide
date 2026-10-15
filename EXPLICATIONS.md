@@ -1,7 +1,7 @@
-# EXPLICATIONS — A2 S2 · Entraînement CC Git · Portail d'entraide
+# EXPLICATIONS — A2 S2 · CC Git · Portail d'entraide
 
 - **Nom / prénom :** GUISSANI Pavel
-- **Dépôt public :** https://github.com/PavelGsn/cc-portail-entraide-entrainement
+- **Dépôt public :** https://github.com/PavelGsn/cc-portail-entraide
 - **Identité Git (configurée en local avant mes commits) :** `Pavel Guissani <233691912+PavelGsn@users.noreply.github.com>` (adresse de confidentialité GitHub)
 
 ## 1. Reprise et diagnostic initial
@@ -75,15 +75,16 @@ Méthode : ouverture d'`index.html` dans le navigateur, puis chargement → 2 cl
 
 ## 7. Publication
 
-- `git remote add origin https://github.com/PavelGsn/cc-portail-entraide-entrainement.git`
+- `git remote add origin https://github.com/PavelGsn/cc-portail-entraide.git` (dépôt renommé sur GitHub après la première publication, puis adresse mise à jour avec `git remote set-url origin ...`)
 - `git push -u origin main feature/accueil feature/contact feature/tutorat hotfix/duree`
-- **Dernier identifiant de main vérifié sur GitHub avant l'ajout de ce fichier : `6a2d6784fac9fc9eff96b62859ff47159782cf92`**, identique à `git rev-parse main` en local. Vérification faite via l'API publique GitHub, sans connexion : les branches `main`, `feature/accueil` (`3f1df58`), `feature/contact` (`5a271f2`), `feature/tutorat` (`a43f314`) et `hotfix/duree` (`6a2d678`) sont visibles.
-- Le commit qui ajoute ce fichier devient le dernier commit de main ; son identifiant est donné dans le message de remise.
+- Vérification via l'API publique GitHub, sans connexion : les branches `main`, `feature/accueil` (`3f1df58`), `feature/contact` (`5a271f2`), `feature/tutorat` (`a43f314`) et `hotfix/duree` (`6a2d678`) sont visibles.
+- **Dernier identifiant de main vérifié sur GitHub avant cette version du fichier : `a15c7349bd77617d85f9fd0ec53150e963feb001`** (ajout d'EXPLICATIONS.md), identique à `git rev-parse main` en local.
+- Le commit qui enregistre cette version de ce fichier devient le dernier commit de main ; son identifiant est donné dans le message de remise.
 
 ## 8. Difficultés
 
 1. **Conflit de fusion (attendu)** : voir section 4. Résultat : fusion `0328b21` terminée avec les deux informations. Vérification : aucun marqueur restant, `git status` propre, deux parents.
-2. **Reprise complète de l'entraînement** :
+2. **Reprise complète du TP** :
    - *État constaté :* un premier essai avait déjà été publié sur ce même dépôt GitHub, et j'ai voulu tout refaire pas à pas pour suivre chaque commande.
    - *Ce que j'ai fait :* suppression du dossier local, nouvelle extraction du zip, toutes les étapes refaites. Le dépôt GitHub existant a été réutilisé : `git push --force` des cinq branches a remplacé le contenu du premier essai.
    - *Résultat :* les branches distantes pointent sur les nouveaux commits (`3f1df58`, `5a271f2`, `a43f314`, `6a2d678`).
@@ -93,8 +94,8 @@ Aucune autre difficulté.
 
 ## 9. Aides utilisées
 
-- **Outil :** Claude Code (assistant IA d'Anthropic, modèle Claude Opus 5.5), utilisé pour ce **TP d'entraînement**.
-- **Demande :** « lis la consigne, extrais le zip et fais le TP d'entraînement », puis « recommence pas à pas pour que je puisse suivre ».
+- **Outil :** Claude Code (assistant IA d'Anthropic, modèle Claude Opus 5.5), utilisé pour ce TP.
+- **Demande :** lire la consigne, extraire le zip et faire le TP, puis tout refaire pas à pas pour que je puisse suivre chaque commande.
 - **Aide reçue :** l'assistant a exécuté et expliqué les commandes : diagnostic, branches, commits `3f1df58` et `5a271f2`, fusions `b174e81` et `0328b21`, résolution du conflit, revert `6a2d678`, publication, tests et rédaction de ce fichier.
 - **Décision :** aide retenue pour apprendre la démarche ; je refais l'exercice seul avant le CC.
 - **Vérifications personnelles (les trois contrôles de la consigne) :**
